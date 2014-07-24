@@ -1,0 +1,28 @@
+git add <filename>	向 git 仓库中添加文件
+git commit -m ""	提交文件
+git status		查看文件状态
+git diff		查看文件前后变化
+git log		查看历史记录
+git log --pretty=oneline	 简化输出信息
+git reset --hard HEAD^	返回到上一个版本
+git reset --hard <commit id>	回到返回之前的commit id对应的版本
+git reflog		记录每次命令
+HEAD 指向当前版本， HEAD^ 指向上一个版本， HEAD ~ 100指向之前第一百个版本
+git diff HEAD -- readme.txt	查看工作区和版本库里最新版本的区别
+git checkout -- <filename> 	让这个文件回到最近一次commit或add时的状态
+git reset HEAD readme.txt 	把暂存区(unstage)的修改撤销，重新放回工作区
+github 推送 ：
+	 关联远程库：git remote set-url origin "https://github.com/bunizhidao/learngit.git"
+	 第一次：git push -u origin master
+	 之后：    git push  origin master
+github克隆 ： 
+	 git clone "https://github.com/bunizhidao/gitskills.git"
+分支管理：
+	git checkout -b dev  创建并切换到 dev 分支
+	等于 git branch dev 和git checkout dev两条语句
+git branch name		创建分支	
+git branch 		查看当前分支，当前分支前有 * 号
+git checkout <fenzhi>	切换到相应分支
+git merge <fenzhi>	合并指定分支到当前分支
+git branch -d dev 	删除dev分支	
+git log --graph		可以看到分支合并图
