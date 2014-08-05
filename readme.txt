@@ -5,3 +5,6 @@ git tracks changes
 creating a new branch is quick and simple.
 there existing another eg.
 为什么就不对呢？
+
+python学习网站：
+http://www.pythoner.cn/ 
